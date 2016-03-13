@@ -3,6 +3,7 @@
 
 #include <QtGui>
 #include <QtWebKit>
+#include <QtWebKitWidgets>
 
 class FenPrincipale : public QMainWindow
 {

@@ -1,8 +1,5 @@
-TEMPLATE = app
+
 QT += widgets webkitwidgets
-TARGET =
-DEPENDPATH += .
-INCLUDEPATH += .
 
 
 # Input

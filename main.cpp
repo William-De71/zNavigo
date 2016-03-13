@@ -15,8 +15,8 @@ int main(int argc, char *argv[])
     app.installTranslator(&translator);
 
     // Ouverture de la fenêtre principale du navigateur
-    FenPrincipale fenetre;
-    fenetre.show();
+    FenPrincipale principale;
+    principale.show();
 
     return app.exec();
 }
