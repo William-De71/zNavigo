@@ -16,7 +16,7 @@ FenPrincipale::FenPrincipale()
 
     // Définition de quelques propriétés de la fenêtre
     setMinimumSize(500, 350);
-    setWindowIcon(QIcon("images/znavigo.png"));
+    setWindowIcon(QIcon("/images/znavigo.png"));
     setWindowTitle(tr("zNavigo"));
 }
 
@@ -32,20 +32,20 @@ void FenPrincipale::creerActions()
     actionQuitter->setShortcut(tr("Ctrl+Q"));
     connect(actionQuitter, SIGNAL(triggered()), qApp, SLOT(quit()));
 
-    actionPrecedente = new QAction(QIcon("images/precedente.png"), tr("&Precedente"), this);
+    actionPrecedente = new QAction(QIcon("/images/precedente.png"), tr("&Precedente"), this);
     actionPrecedente->setShortcut(QKeySequence::Back);
     connect(actionPrecedente, SIGNAL(triggered()), this, SLOT(precedente()));
-    actionSuivante = new QAction(QIcon("images/suivante.png"), tr("&Suivante"), this);
+    actionSuivante = new QAction(QIcon("/images/suivante.png"), tr("&Suivante"), this);
     actionSuivante->setShortcut(QKeySequence::Forward);
     connect(actionSuivante, SIGNAL(triggered()), this, SLOT(suivante()));
-    actionStop = new QAction(QIcon("images/stop.png"), tr("S&top"), this);
+    actionStop = new QAction(QIcon("/images/stop.png"), tr("S&top"), this);
     connect(actionStop, SIGNAL(triggered()), this, SLOT(stop()));
-    actionActualiser = new QAction(QIcon("images/actualiser.png"), tr("&Actualiser"), this);
+    actionActualiser = new QAction(QIcon("/images/actualiser.png"), tr("&Actualiser"), this);
     actionActualiser->setShortcut(QKeySequence::Refresh);
     connect(actionActualiser, SIGNAL(triggered()), this, SLOT(actualiser()));
-    actionAccueil = new QAction(QIcon("images/accueil.png"), tr("A&ccueil"), this);
+    actionAccueil = new QAction(QIcon("/images/accueil.png"), tr("A&ccueil"), this);
     connect(actionAccueil, SIGNAL(triggered()), this, SLOT(accueil()));
-    actionGo = new QAction(QIcon("images/go.png"), tr("A&ller à"), this);
+    actionGo = new QAction(QIcon("/images/go.png"), tr("A&ller à"), this);
     connect(actionGo, SIGNAL(triggered()), this, SLOT(chargerPage()));
 
     actionAPropos = new QAction(tr("&A propos..."), this);
