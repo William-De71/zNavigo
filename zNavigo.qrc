@@ -1,0 +1,11 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+     <file>images/znavigo.png</file>
+     <file>images/precedente.png</file>
+     <file>images/suivante.png</file>
+     <file>images/stop.png</file>
+     <file>images/actualiser.png</file>
+     <file>images/accueil.png</file>
+	 <file>images/go.png</file>
+</qresource>
+</RCC>
